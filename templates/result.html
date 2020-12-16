@@ -19,7 +19,20 @@
 		<h1 id="title">Results</h1>
 		<br>
 		<h2>Top 20 tweets</h2>
+		<a href="http://0.0.0.0:5000/" class="button">Back</a>
 	</center>
+	
+	<div style="height: 300px; width: 80%; margin:auto; background-color: white;">	
+ 		<div style="background-color: white;">
+		 <br>
+		 <section style="margin-left: 30px; heigth:auto">
+  			 {% for i in tweets %}
+     				 <p style="font-size:1em;font-family: Courier New;"> {{ i[1] }}</p>
+ 			 {% endfor %}
+  		 </section>
+ 
+ </div>
+</div>
 
 </body>
 
