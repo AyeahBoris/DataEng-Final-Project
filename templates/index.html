@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Search Application</title>
+	
+	<style>
+		h1 {
+			font-size: 3em;
+			color: Red;
+			font-family: "Times New Roman", Times, serif;
+  
+		}
+
+
+		label{
+			font-size: 2em;
+			color: DodgerBlue;
+			font-family: "Times New Roman", Times, serif;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 id="title">Data Engineering II Final Project</h1>
+	<h2 id="title">Twitter Search Application</h2>
+
+    <p id="subtitle">
+        Welcome! This application serves to return the top 20 tweets which are similar to an input search string
+    </p>
+	
+	<div class="container">
+		<center>
+        <form method='post' action='/'>
+            <div class="row">
+                <div class="col-25">
+                    <label for="twitter-user">Search String</label>
+                </div>
+                <div class="col-75">
+                    <input height="10" type="text" name="username" class="form-control" placeholder="Enter a string..." required autofocus>
+                </div>
+            </div>
+			
+			<div class="row">
+                <input type="submit" value="Submit!">
+            </div>
+        </form>
+		</center>
+    </div>
+
+
+
+</body>
+
+</html>
