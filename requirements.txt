@@ -1,0 +1,6 @@
+flask
+gensim
+nltk
+numpy
+pandas
+prometheus-client
