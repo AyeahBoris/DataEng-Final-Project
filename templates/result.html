@@ -1,39 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>RESULTS</title>
-	
-	<style>
-		h1 {
-			font-size: 3em;
-			color: Red;
-			font-family: "Times New Roman", Times, serif;
-  
-		}
+<!doctype html>
 
-	</style>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Results </title>
+  <meta name="description" content="Results">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+h1 {
+  font-size: 2.5em;
+  color: DodgerBlue;
+  font-family: "Times New Roman", Times, serif;
+  
+}
+
+
+.button {
+         background-color: #f44336;
+         border: none;
+         color: white;
+         padding:10px;
+         text-align: center;
+         text-decoration: none;
+         border-radius: 8px 14px;
+         display: inline-block;
+         font-size: 12px;
+         margin: 15px;
+         cursor: pointer;
+}
+
+footer {
+	position:fixed;
+	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: #777;
+  	padding: 10px;
+  	text-align: center;
+  	color: white;
+}
+
+
+</style>
 </head>
 
 <body>
-	<center>
-		<h1 id="title">Results</h1>
-		<br>
-		<h2>Top 20 tweets</h2>
-		<a href="http://0.0.0.0:5000/" class="button">Back</a>
-	</center>
-	
-	<div style="height: 300px; width: 80%; margin:auto; background-color: white;">	
- 		<div style="background-color: white;">
-		 <br>
-		 <section style="margin-left: 30px; heigth:auto">
-  			 {% for i in tweets %}
-     				 <p style="font-size:1em;font-family: Courier New;"> {{ i[1] }}</p>
- 			 {% endfor %}
-  		 </section>
+ <div class="jumbotron text-center" style="background-color:white;margin-bottom:0; border-bottom: 5px solid DodgerBlue;padding:15px">
+  <h1>Top 20 tweets</h1> 
+  <a href="http://0.0.0.0:5000/" class="button">Home</a>
+</div>
+
+<div style="height: 400px; width: 90%; margin:auto; background-color: white;">	
+ <div style="background-color: white;">
+ <br>
+ <section style="margin-left: 20px; heigth:auto">
+   {% for i in tweets %}
+      <p style="font-size:0.875em;font-family: Courier New;"> {{ i[1] }}</p>
+  {% endfor %}
+   </section>
  
  </div>
 </div>
-
+ <br><br>
+<footer>
+  <p>Footer</p>
+</footer>
 </body>
 
 </html>
